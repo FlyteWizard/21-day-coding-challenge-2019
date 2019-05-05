@@ -8,7 +8,7 @@ https://coding-challenge.lighthouselabs.ca/
 
 **Description:** The team is for anyone who is in the Web Dev Club!
 
-**Member Count:** 9
+**Member Count:** 10
 
 ## Coding Challenge
 
