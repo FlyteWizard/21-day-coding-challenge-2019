@@ -1,0 +1,1 @@
+loadModule(findModuleIndex("navigation"));
