@@ -18,3 +18,4 @@ https://coding-challenge.lighthouselabs.ca/
 * [Day 4](./day-4.js)
 * [Day 5](./day-5.js)
 * [Day 6](./day-6.js)
+* [Day 7](./day-7.js)
