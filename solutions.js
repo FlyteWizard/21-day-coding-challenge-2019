@@ -40,9 +40,7 @@ function loadModule(index) {
 // findModuleIndex
 function findModuleIndex(findName) {
   for (let i = 0; i < availableModules.length; i++) {
-    if (availableModules[i].name === findName && availableModules[i].essential) {
-      return i;
-    } else if (availableModules[i].name === findName) {
+    if (availableModules[i].name === findName && availableModules[i].hasOwnProperty('essential')) {
       return i;
     }
   }
@@ -67,3 +65,12 @@ resetLARRY();
 
 // loadModule Communication
 loadModule(findModuleIndex("communication"));
+
+// setMessage
+function setMessage() {
+  let navigationJSON = JSON.stringify(navigation);
+  radio.message = navigationJSON;
+}
+
+// Call setMessage
+setMessage();
