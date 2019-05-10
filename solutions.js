@@ -74,3 +74,8 @@ function setMessage() {
 
 // Call setMessage
 setMessage();
+
+// activateBeacon
+function activateBeacon() {
+  radio.beacon = true;
+}
