@@ -22,3 +22,4 @@ https://coding-challenge.lighthouselabs.ca/
 * [Day 8](./solutions/day-8.js)
 * [Day 9](./solutions/day-9.js)
 * [Day 10](./solutions/day-10.js)
+* [Day 11](./solutions/day-11.js)
