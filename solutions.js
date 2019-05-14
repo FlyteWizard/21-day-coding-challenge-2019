@@ -110,4 +110,28 @@ function calibrateX() {
 }
 
 // Call calibrateX
-calibrateX();
+//calibrateX();
+
+// calibrateY
+function calibrateY() {
+  let signal = null;
+  for (let i = 0; i < 60; i++) {
+    signal = checkSignal();
+    if (signal !== undefined) {
+      navigation.y = signal;
+      break;
+    }
+  }
+}
+
+// calibrateZ
+function calibrateZ() {
+  let signal = null;
+  for (let i = 0; i < 60; i++) {
+    signal = checkSignal();
+    if (signal !== undefined) {
+      navigation.z = signal;
+      break;
+    }
+  }
+}
