@@ -109,7 +109,7 @@ function calibrateX() {
   }
 }
 
-// Call calibrateX
+// Call calibrateX - DEPRECATED
 //calibrateX();
 
 // calibrateY
@@ -134,4 +134,11 @@ function calibrateZ() {
       break;
     }
   }
+}
+
+// calibrate
+function calibrate() {
+  calibrateX();
+  calibrateY();
+  calibrateZ();
 }
