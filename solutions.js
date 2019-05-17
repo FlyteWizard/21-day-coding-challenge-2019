@@ -153,3 +153,11 @@ function setSpeed(speed) {
     return "Number must be positive";
   }
 }
+
+// activateAntenna
+function activateAntenna() {
+  ship.antenna.active = true;
+}
+
+// Call activateAntenna
+activateAntenna();
