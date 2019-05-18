@@ -29,3 +29,4 @@ https://coding-challenge.lighthouselabs.ca/
 * [Day 15](./solutions/day-15.js)
 * [Day 16](./solutions/day-16.js)
 * [Day 17](./solutions/day-17.js)
+* [Day 18](./solutions/day-18.js)
