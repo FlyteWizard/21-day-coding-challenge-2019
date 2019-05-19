@@ -159,8 +159,8 @@ function activateAntenna() {
   ship.antenna.active = true;
 }
 
-// Call activateAntenna
-activateAntenna();
+// Call activateAntenna - DEPRECATED
+//activateAntenna();
 
 // sendBroadcast
 function sendBroadcast() {
@@ -169,5 +169,15 @@ function sendBroadcast() {
   }
 }
 
-// Call sendBroadcast
-sendBroadcast();
+// Call sendBroadcast - DEPRECATED
+//sendBroadcast();
+
+// configureBroadcast
+function configureBroadcast() {
+  setFrequency();
+  activateAntenna();
+  sendBroadcast();
+}
+
+// Call configureBroadcast
+configureBroadcast();
