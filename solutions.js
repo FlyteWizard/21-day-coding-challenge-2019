@@ -182,16 +182,38 @@ function configureBroadcast() {
 // Call configureBroadcast
 configureBroadcast();
 
-// decodeMessage()
+// decodeMessage
 function decodeMessage(message) {
   let currentMessage = message
-  .replace(/1/g, 'i')
-  .replace(/3/g, 'e')
   .replace(/0/g, 'o')
-  .replace(/5/g, 'y')
-  .replace(/4/g, 'a')
+  .replace(/1/g, 'i')
   .replace(/2/g, 'u')
+  .replace(/3/g, 'e')
+  .replace(/4/g, 'a')
+  .replace(/5/g, 'y')
   .replace(/id/g, 'ld');
 
   return currentMessage;
 }
+
+// returnToEarth
+function returnToEarth() {
+  let xCoord = broadcast("x");
+  let yCoord = broadcast("y");
+  let zCoord = broadcast("z");
+  
+  let xDecoded = decodeMessage(xCoord);
+  let yDecoded = decodeMessage(yCoord);
+  let zDecoded = decodeMessage(zCoord);
+  
+  let xIntCoord = parseInt(xDecoded, 16);
+  let yIntCoord = parseInt(yDecoded, 16);
+  let zIntCoord = parseInt(zDecoded, 16);
+  
+  navigation.x = xIntCoord;
+  navigation.y = yIntCoord;
+  navigation.z = zIntCoord;
+}
+
+// Call returnToEarth
+returnToEarth();
