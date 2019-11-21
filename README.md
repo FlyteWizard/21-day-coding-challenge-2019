@@ -1,4 +1,4 @@
-# 21-Day Coding Challenge 2019
+# 21-Day Coding Challenge Spring 2019
 
 https://coding-challenge.lighthouselabs.ca/
 
